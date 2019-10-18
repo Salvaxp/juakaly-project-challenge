@@ -1,0 +1,296 @@
+:root {
+	--green:#618227;
+	--light:white;
+	--shadow:0 1px 5px rgba(104, 104, 104, 0.8);
+}
+html{
+	box-sizing: border-box;
+	background-color: white;
+	margin: 0;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: arial;
+}
+
+/*for the navigation*/
+.main-nav{
+	display: ;
+	padding: 0;
+	margin: 0;
+	background:  var(--green);
+	box-shadow: var(--shadow);
+}
+
+.main-nav ul{
+	
+	text-align: center;
+	margin: 0;
+
+}
+
+.main-nav li{
+	display: inline-block;
+	margin: auto;
+}
+
+.main-nav a{
+	margin: auto;
+	text-decoration: none;
+	text-transform: capitalize;
+	display: block;
+	height: 30px;
+	color: white;
+	padding: 1.3rem;
+
+
+}
+
+.main-nav a:hover{
+	background: orange;
+}
+
+
+/*for the home section*/
+
+.home{
+	text-transform: capitalize;
+	text-align: center;
+	margin-right: 30px;
+	margin-left: 30px;
+	box-shadow: var(--shadow);
+	
+}
+
+.home h1{
+	font-size: 5.5rem;
+	color: white;
+}
+
+.home p{
+	color: white;
+	font-size: 1.3rem;
+}
+.active{
+	background: orange;
+}
+
+.home a{
+	display: block;
+	text-transform: capitalize;
+	text-decoration: none;
+	background-color: limegreen;
+	height: 23px;
+	color: white;
+	width: 30%;
+	font-size: 1.2rem;
+	border-radius: 25px;
+	padding: 1.4rem;
+	box-shadow: var(--shadow);
+}
+
+/*styling for the package page*/
+
+.package-banner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+
+}
+
+.package-banner h1{
+	font-size: 5.5rem;
+	text-transform: capitalize;
+	color: white;
+
+}
+
+.min-text {
+	
+}
+.main-img img{
+	width: 400px;
+	height: 400px;
+}
+
+.main-double{
+	display: grid;
+	grid-gap: 80px;
+	grid-template-columns:  repeat(auto-fit, minmax(200px, 1fr));
+	margin:  3rem 3rem;
+}
+
+.main-double a{
+	
+	text-transform: uppercase;
+	text-decoration: none;
+	background-color: limegreen;
+	height: 23px;
+	color: white;
+	margin-top: auto;
+	font-size: 0.9rem;
+	border-radius: 10px;
+	padding: 1rem;
+
+}
+
+.first , .second{
+	text-align: left;
+	margin-left:  1.2rem;
+
+}
+
+.first img , .second img{
+	width: 200px;
+	margin-right: 18px;
+	height: 200px;
+	float: left;
+	box-shadow: var(--shadow);
+}
+
+.second{
+	
+}
+
+.second img{
+	width: 200px;
+	height: 200px;
+	float: left;
+}
+
+.contact{
+	display: grid;
+	grid-gap: 30px;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.contact-text{
+	text-align: center;
+	justify-content: ;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.contact-text p{
+	color: white;
+	font-size: 1.2rem;
+}
+.contact-text a{
+	color: white;
+	font-size: 1.2rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	background-color: green;
+	height: 20px;
+	display: inline-block;
+	width: 50%;
+	padding: 15px;
+}
+
+.contact-text a:hover{
+	background: orange;
+	border-radius: 20px;
+}
+.contact-text h1{
+	color: green;
+	font-size: 2.3rem;
+	text-transform: capitalize;
+}
+.contact-form{
+	text-align: center;
+	background: var(--green);
+	margin: 20px;
+	text-transform: capitalize;
+	color: white;
+	opacity: .9;
+	box-shadow: var(--shadow);
+
+}
+
+.contact-form input{
+	height: 30px;
+	width: 60%;
+	padding: 10px;
+	margin-bottom: 0.7rem;
+	font-family: arial;
+	font-size: 0.8rem;
+	border-radius: 20px;
+	border: 0;
+	text-transform: capitalize;
+	outline: none;
+	box-shadow: var(--shadow);
+}
+
+.contact-form textarea{
+	height: 80px;
+	width: 60%;
+	padding: 10px;
+	margin-bottom: 0.7rem;
+	font-family: arial;
+	font-size: 0.8rem;
+	border-radius: 20px;
+	border: 0;
+	text-transform: capitalize;
+	outline: none;
+}
+
+.contact-form a{
+	display: inline-block;
+	height: 20px;
+	padding: 0.7rem;
+	text-decoration: none;
+	color: white;
+	margin-bottom: 10px;
+	width: 40%;
+	border-radius: 15px;
+	background: #000;
+	box-shadow: var(--shadow);
+}
+
+.contact-form a:hover{
+	background: orange;
+	border-radius: 0px;
+}
+
+
+/*about page plus*/
+
+.main{
+	display: grid;
+	grid-gap: 20px;
+	grid-template-areas: 
+	'main-img'  'main-text-a' 
+	 'main-img'  'main-text-b';
+}
+
+.main-img{
+	grid-area: main-img;
+	display: flex;
+	justify-content: start;
+	flex-direction: column;
+	
+
+}
+
+.main-text{
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	
+
+
+}
+
+.main-text-a{
+	grid-area: main-text-a;
+
+}
+
+.main-text-b{
+	grid-area: main-text-b;
+
+}
